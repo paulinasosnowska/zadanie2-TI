@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>	
+<!-- head - tutaj znajdują się informacje zawarte w początkowej częsci strony (tytuł oraz nagłówkowa fotografia) -->	
+<head>
+	<title> Moja strona internetowa</title>
+	<div id="inner"> <h1>Fotografia</h1> </div>
+	<div id="zdjecie1"><img src="http://www.szkolyartystyczne.roe.pl/images/kierunki/fotografia.jpg"></div>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<meta charset = "UTF-8">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="skrypt.js"></script>
+</head>
+<!-- Zawiera informacje na temat reszty strony podzielone na klasy oraz identyfikatory -->
+<body>
+	<div id="NAGLOWEK"><h4>Strona poświęcona fotografii</h4></div>
+	<!-- Menu główne podzielone na listę uporządkowaną (ol), stanowiącą główne działy menu oraz listę nieuporządkowaną (ul) - z podrozdziałami -->
+	<div class="MENU_GLOWNE"><h3>Menu Główne</h3>
+		<ol id="glowne">
+    <li><a href="#">Rodzaje aparatów</a>
+      <ul id="menu">
+        <li><a href="#">Canon</a></li>
+        <li><a href="#">Nikon</a></li>
+        <li><a href="#">Pentax</a></li>
+      </ul>
+    </li>
+
+     <li><a href="#">Portfolio</a>
+      <ul>
+        <li><a href="#">ludzie</a></li>
+        <li><a href="#">zwierzęta</a></li>
+      </ul>
+    </li>
+	
+     <li><a href="#">Tutorial</a>
+      <ul>
+        <li><a href="#">obróbka</a></li>
+        <li><a href="#">początki</a></li>
+      </ul>
+    </li>
+    <li id="formularz"><a href="formularz.htm">Formularz</a></li>
+  </ol>
+  	</div>
+
+<div class="formularz">
+			<form action="">
+				<fieldset  >
+					<legend>
+						<strong> Formularz kontaktowy</strong>
+					</legend>
+					<table id="formularz" border="0">
+						<tr>
+							<td><label for="imie" class="hover">Imię</label></td>
+							<td>							<textarea name="imie" cols="30" rows="1" id="imie"></textarea></td>
+						</tr>
+						<tr>
+							<td><label for="nazwisko" class="hover">Nazwisko</label></td>
+							<td>							<textarea name="nazwisko" cols="30" rows="1" id="nazwisko"></textarea></td>
+						</tr>
+						<tr>
+							<td><label for="email">E-mail</label></td>
+							<td>							<textarea name="email" cols="40" rows="1" id="email"></textarea></td>
+						</tr>
+						<tr>
+							<td><label for="wiadomosc">Twoja wiadomość</label></td>
+							<td>							<textarea name="wiadomosc" cols="20" rows="5" id="wiadomosc"></textarea></td>
+						</tr>
+						<tr>
+							<td>
+							<input id = "btt_wyslij" type="button" value="Wyślij!!"/>
+							</td>
+							<td>
+					</table>
+
+				</fieldset>
+		</div>
+
+        <!-- Stopka strony -->
+	<div id="STOPKA">© Paulina Sosnowska </div>
+	</body>	
+</html>

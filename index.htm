@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>	
+<!-- head - tutaj znajdują się informacje zawarte w początkowej częsci strony (tytuł oraz nagłówkowa fotografia) -->	
+<head>
+	<title> Moja strona internetowa</title>
+	<div id="inner"> <h1>Fotografia</h1> </div>
+	<div id="zdjecie1"><img src="http://www.szkolyartystyczne.roe.pl/images/kierunki/fotografia.jpg" ></div>
+	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<meta charset = "UTF-8">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="skrypt.js"></script>
+</head>
+<!-- Zawiera informacje na temat reszty strony podzielone na klasy oraz identyfikatory -->
+<body>
+	<div id="NAGLOWEK"><h4>Strona poświęcona fotografii</h4></div>
+	<!-- Menu główne podzielone na listę uporządkowaną (ol), stanowiącą główne działy menu oraz listę nieuporządkowaną (ul) - z podrozdziałami -->
+	<div class="MENU_GLOWNE"><h3>Menu Główne</h3>
+		<ol id="glowne">
+    <li><a href="#">Rodzaje aparatów</a>
+      <ul id="menu">
+        <li id="canon"><a href="http://www.canon.pl/">Canon</a></li>
+        <li><a href="http://www.nikon.pl/pl_PL/">Nikon</a></li>
+        <li><a href="http://pentax.org.pl/">Pentax</a></li>
+      </ul>
+    </li>
+
+     <li><a href="http://www.vandelaydesign.com/best-photographer-portfolio-websites/">Portfolio</a>
+      <ul>
+        <li><a href="http://www.deviantart.com/browse/all/photography/people/">ludzie</a></li>
+        <li><a href="http://photography.nationalgeographic.com/photography/photo-of-the-day/animals/">zwierzęta</a></li>
+      </ul>
+    </li>
+	
+     <li><a href="http://digital-photography-school.com/tips">Tutorial</a>
+      <ul>
+        <li><a href="https://www.youtube.com/results?search_query=photoshop+tutorial">obróbka</a></li>
+        <li><a href="http://www.wikihow.com/Start-Doing-Photography">początki</a></li>
+      </ul>
+    </li>
+    <li id="formularz"><a href="formularz.htm">Formularz</a></li>
+  </ol>
+  	</div>
+<!-- Główne informacje zawarte na stronie -->	
+	<div class="strona"><h3> Informacje o stronie</h3>
+		
+		<p> <span id="foto">Fotografia</span> (gr. φως, phōs, D. phōtós – światło; gráphō – piszę, graphein – rysować, pisać; rysowanie za pomocą światła), 
+			<p>Zbiór wielu różnych technik, których celem jest zarejestrowanie trwałego, pojedynczego obrazu za pomocą światła.</p> 
+			<p>Potoczne znaczenie zakłada wykorzystanie układu optycznego, choć nie jest to konieczne np. przy rayografii.</p>
+			<p>Dużo ciekawych inspiracji: <a href="http://www.500px.com"><img src="http://s21.postimg.org/4abqp7zmb/cats.jpg" /></a></p>
+	<p>  
+		<hr />
+		  
+   			
+	<div id="slider">
+	<img src="img/img1.jpg" id="image" >
+	<div class="left_hold"><img onclick="photo(-1)" class="left" src="img/512px-Circle_arrow_left_font_awesome.svg.png"></div>
+	<div class="right_hold"><img onclick="photo(1)" class="right" src="img/512px-Circle_arrow_right_font_awesome.svg.png"></div>
+	</div>
+	
+		<!-- Tabela zawierająca galerię -->
+		<table border="2px">
+		
+			 <thead>
+			<tr>
+				<th colspan="2">GALERIA</th>
+			</tr>
+			 </thead>
+            <tr>
+                <td><img src="http://www.minubo.com/wp-content/uploads/2013/11/icon-product-there-for-you-200x200px.png"></td>
+                <td><img src="http://www.bigcheesebadges.com/images/football_soccer_ball.png"></td>
+            </tr>
+            <td><img src="http://catcall.org.uk/wp-content/uploads/2013/06/200x200px-ZC-421a5a73_cutecat.jpeg"></td>
+            <td><img src="https://static.ylilauta.org/files/cl/orig/b7q1u527/1284920694002.jpg"></td>
+            <tr>
+              <td><img src="http://wallpaperest.com/wallpapers/man-with-question-mark_111123.jpg"></td> 
+              <td><img src="http://free-clipart-pictures.net/free_clipart/paw_print_clipart/paw_print_clipart_1.gif"></td> 
+            </tr>
+            <tr>  
+            </tr>
+  </table></p></div>
+  
+        <!-- Stopka strony -->
+	<div id="STOPKA">© Paulina Sosnowska </div>
+	
+	</body>
+		
+</html>

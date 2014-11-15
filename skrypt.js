@@ -1,4 +1,16 @@
 $(document).ready(function() {
+	$('#NAGLOWEK').click(function() {
+		$(this).fadeOut('slow');
+	});
+});
+$(document).ready(function() {
+$("#strona_glowna").click(function() {
+	$('body').load("index.htm");
+});
+});
+
+
+$(document).ready(function() {
 	$('#inner').mouseenter(function() {
 		$(this).animate({
 			width : "150px",
@@ -10,44 +22,6 @@ $(document).ready(function() {
 $(document).ready(function(){
       alert("Witamy na stronie!");
    });
-
-$("#formularz").click(function(){
-		$(".content_load").load("formularz.htm");
-		});
-		
-$(document).ready(function(){	
-$("#btt_wyslij").click(function() {
-		$("#imie").css('background-color', '#FFFFFF');
-		if ($("#imie").val().length == 0) {
-			$("#imie").css('background-color', 'yellow');
-
-		}
-	});
-	$("#btt_wyslij").click(function() {
-		$("#nazwisko").css('background-color', '#FFFFFF');
-		if ($("#nazwisko").val().length == 0) {
-			$("#nazwisko").css('background-color', 'yellow');
-
-		}
-	});
-	$("#btt_wyslij").click(function() {
-		$("#email").css('background-color', '#FFFFFF');
-		if ($("#email").val().length == 0) {
-			$("#email").css('background-color', 'yellow');
-
-		}
-	});
-	$("#btt_wyslij").click(function() {
-		$("#email").css('background-color', 'yellow');
-
-		var mail = /\S+@\S+\.\S+/;
-		if (!mail.test($("#email").val())) {
-			alert("Zły ades e-mail");
-			$("#email").css('background-color', 'yellow');
-
-		};
-	});
-});
 });
 
 var imageCount = 1;

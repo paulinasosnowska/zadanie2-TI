@@ -84,6 +84,10 @@ ul a:hover {
 	border-style: inset;
 	padding: 5px 3px 3px 5px;
 }
+
+#strona_glowna {
+	margin-bottom: 5px;
+}
 /*parametry treści strony*/
 .strona {
 	width: 80%;

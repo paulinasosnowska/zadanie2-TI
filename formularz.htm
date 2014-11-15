@@ -16,25 +16,26 @@
 	<!-- Menu główne podzielone na listę uporządkowaną (ol), stanowiącą główne działy menu oraz listę nieuporządkowaną (ul) - z podrozdziałami -->
 	<div class="MENU_GLOWNE"><h3>Menu Główne</h3>
 		<ol id="glowne">
+			<li id="strona_glowna"><a href="#">Strona Główna</a></li>
     <li><a href="#">Rodzaje aparatów</a>
       <ul id="menu">
-        <li><a href="#">Canon</a></li>
-        <li><a href="#">Nikon</a></li>
-        <li><a href="#">Pentax</a></li>
+        <li id="canon"><a href="http://www.canon.pl/">Canon</a></li>
+        <li><a href="http://www.nikon.pl/pl_PL/">Nikon</a></li>
+        <li><a href="http://pentax.org.pl/">Pentax</a></li>
       </ul>
     </li>
 
-     <li><a href="#">Portfolio</a>
+     <li><a href="http://www.vandelaydesign.com/best-photographer-portfolio-websites/">Portfolio</a>
       <ul>
-        <li><a href="#">ludzie</a></li>
-        <li><a href="#">zwierzęta</a></li>
+        <li><a href="http://www.deviantart.com/browse/all/photography/people/">ludzie</a></li>
+        <li><a href="http://photography.nationalgeographic.com/photography/photo-of-the-day/animals/">zwierzęta</a></li>
       </ul>
     </li>
 	
-     <li><a href="#">Tutorial</a>
+     <li><a href="http://digital-photography-school.com/tips">Tutorial</a>
       <ul>
-        <li><a href="#">obróbka</a></li>
-        <li><a href="#">początki</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=photoshop+tutorial">obróbka</a></li>
+        <li><a href="http://www.wikihow.com/Start-Doing-Photography">początki</a></li>
       </ul>
     </li>
     <li id="formularz"><a href="formularz.htm">Formularz</a></li>
@@ -42,37 +43,16 @@
   	</div>
 
 <div class="formularz">
-			<form action="">
-				<fieldset  >
-					<legend>
-						<strong> Formularz kontaktowy</strong>
-					</legend>
-					<table id="formularz" border="0">
-						<tr>
-							<td><label for="imie" class="hover">Imię</label></td>
-							<td>							<textarea name="imie" cols="30" rows="1" id="imie"></textarea></td>
-						</tr>
-						<tr>
-							<td><label for="nazwisko" class="hover">Nazwisko</label></td>
-							<td>							<textarea name="nazwisko" cols="30" rows="1" id="nazwisko"></textarea></td>
-						</tr>
-						<tr>
-							<td><label for="email">E-mail</label></td>
-							<td>							<textarea name="email" cols="40" rows="1" id="email"></textarea></td>
-						</tr>
-						<tr>
-							<td><label for="wiadomosc">Twoja wiadomość</label></td>
-							<td>							<textarea name="wiadomosc" cols="20" rows="5" id="wiadomosc"></textarea></td>
-						</tr>
-						<tr>
-							<td>
-							<input id = "btt_wyslij" type="button" value="Wyślij!!"/>
-							</td>
-							<td>
-					</table>
-
-				</fieldset>
-		</div>
+<form >
+    <fieldset>
+        <p><input type="text" name="contact_name" placeholder="Imię" required="required" /></p>
+        <p><input type="text" name="contact_surname" placeholder="Nazwisko" required="required"/></p>
+        <p><input type="email" name="contact_email" placeholder="Adres e-mail" required="required" /></p>
+        <p><textarea rows="5" columns="10" name="contact_body" placeholder="Twoja wiadomość" required="required"></textarea></p>
+       <p><input type="submit" value="Wyślij"/></p>
+     </fieldset>
+    </form>
+    		</div>
 
         <!-- Stopka strony -->
 	<div id="STOPKA">© Paulina Sosnowska </div>
